@@ -5,4 +5,7 @@ from django.contrib.auth.decorators import login_required
 
 @login_required
 def dashboard(request):
-    return render(request, 'dashboard.html', {'section': 'dashboard'})
+    return render(request, 'registration/dashboard.html', {'section': 'dashboard'})
+
+def login(request):
+    return render(request, 'registration/login.html')
